@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Justiça & Ordem | Aprendendo a Lição & Lei e Ordem</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra de Navegação Unificada -->
+  <header class="navbar">
+    <div class="logo-container">
+      <span class="logo-badge">PORTAL</span>
+      <h1 class="logo">JUSTIÇA <span class="highlight-red">&amp;</span> ORDEM</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="#licao">Aprendendo a Lição</a>
+      <a href="#lei-ordem">Lei &amp; Ordem</a>
+      <a href="#dossies">Dossiês de Campo</a>
+    </nav>
+  </header>
+
+  <!-- Banner de Destaque Híbrido -->
+  <section class="hero-unified">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="stamp-group">
+        <span class="stamp stamp-yellow">BUREAU DE PROTEÇÃO ESCOLAR</span>
+        <span class="stamp stamp-blue">SISTEMA DE JUSTIÇA CRIMINAL</span>
+      </div>
+
+      <h1 class="main-title">
+        APRENDENDO A LIÇÃO <br>
+        <span class="title-sub">&amp; LEI E ORDEM</span>
+      </h1>
+
+      <div class="warning-bar">
+        <span class="warning-text">DOSSIÊ CONJUNTO #2026 — DO TRIBUNAL ÀS SALAS DE AULA</span>
+      </div>
+
+      <p class="hero-tagline">
+        Duas frentes de atuação para restabelecer a autoridade, proteger o cidadão e garantir o cumprimento estrito da lei onde quer que a ordem tenha sido rompida.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#licao" class="btn btn-yellow">APRENDENDO A LIÇÃO</a>
+        <a href="#lei-ordem" class="btn btn-blue">LEI &amp; ORDEM</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-container">
+
+    <!-- Seção 1: Aprendendo a Lição -->
+    <section id="licao" class="series-section">
+      <div class="section-header border-yellow">
+        <span class="section-tag tag-yellow">FORÇA-TAREFA DE CAMPO</span>
+        <h2>Aprendendo a Lição</h2>
+        <p class="section-desc">
+          Quando o ambiente escolar perde a disciplina e a autoridade tradicional falha, o Bureau entra em ação com tolerância zero para combater o abuso de poder e o bullying grave.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card card-licao" onclick="mostrarInfo('Na Hwa-jin', 'Inspetor principal do Bureau de Proteção dos Direitos dos Professores. Atua no campo com autoridade total para reprimir o bullying grave e devolver a ordem às escolas.')">
+          <div class="card-badge bg-red">INSPETOR CHEFE</div>
+          <h3>Na Hwa-jin</h3>
+          <p>Supervisão e Intervenção Direta</p>
+        </div>
+
+        <div class="card card-licao" onclick="mostrarInfo('Lim Han-lim', 'Agente de campo com treinamento tático avançado. Especialista em combate direto e investigações sob disfarce no ambiente escolar.')">
+          <div class="card-badge bg-yellow">AGENTE DE CAMPO</div>
+          <h3>Lim Han-lim</h3>
+          <p>Investigação e Ação Rápida</p>
+        </div>
+
+        <div class="card card-licao" onclick="mostrarInfo('Bong Geun-dae', 'Responsável pela inteligência cibernética, cruzamento de dados, escutas e mapeamento da estrutura de gangues escolares.')">
+          <div class="card-badge bg-dark-red">SUPORTE TÁTICO</div>
+          <h3>Bong Geun-dae</h3>
+          <p>Inteligência & Análise</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divisor Visual Estilizado -->
+    <div class="series-divider">
+      <span>TRANSIÇÃO DE JURISDIÇÃO — DO CAMPO AO TRIBUNAL</span>
+    </div>
+
+    <!-- Seção 2: Lei & Ordem -->
+    <section id="lei-ordem" class="series-section">
+      <div class="section-header border-blue">
+        <span class="section-tag tag-blue">JUSTIÇA PROCEDIMENTAL</span>
+        <h2>Lei &amp; Ordem</h2>
+        <p class="section-desc">
+          No sistema de justiça criminal, a verdade é alcançada em duas etapas fundamentais: o trabalho de investigação nas ruas e o combate técnico nos tribunais.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card card-lei" onclick="mostrarInfo('Divisão de Homicídios & Investigação', 'A equipe de detetives atua na coleta rigorosa de provas, preservação da cena do crime e interrogatório de suspeitos.')">
+          <div class="card-badge bg-blue">FRENTE POLICIAL</div>
+          <h3>01. A Polícia</h3>
+          <p>Investigação &amp; Captura de Suspeitos</p>
+        </div>
+
+        <div class="card card-lei" onclick="mostrarInfo('Promotoria de Justiça', 'Os promotores públicos assumem os autos do processo, enfrentando complexas batalhas judiciais para garantir a condenação perante o júri.')">
+          <div class="card-badge bg-light-blue">FRENTE JURÍDICA</div>
+          <h3>02. O Tribunal</h3>
+          <p>Acusação &amp; Processo Criminal</p>
+        </div>
+
+        <div class="card card-lei" onclick="mostrarInfo('Dossiês de Julgamento', 'Casos de grande repercussão que testam os limites da lei, a ética policial e a imparcialidade do júri.')">
+          <div class="card-badge bg-navy">CORPUS DELICTI</div>
+          <h3>03. As Provas</h3>
+          <p>Perícia &amp; Análise Forense</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Janela Modal Interativa -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-btn" id="close-modal" aria-label="Fechar">&times;</button>
+      <div class="modal-header">
+        <span id="modal-tag" class="modal-tag">DOSSIÊ CONFIDENCIAL</span>
+        <h3 id="modal-title"></h3>
+      </div>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Portal Fan-Made inspirado em <strong>Aprendendo a Lição</strong> e <strong>Lei &amp; Ordem</strong>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
