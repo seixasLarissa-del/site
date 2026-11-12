@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dossiê Escolar &amp; Leis | Aprendendo a Lição</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo-container">
+      <span class="logo-badge">BUREAU</span>
+      <h1 class="logo">APRENDENDO <span class="highlight-red">A LIÇÃO</span></h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">← Voltar ao Portal</a>
+      <a href="#leis">Legislação</a>
+      <a href="#casos">Casos Arquivados</a>
+    </nav>
+  </header>
+
+  <main class="main-container page-top-spacing">
+    <div class="section-header border-yellow">
+      <span class="section-tag tag-yellow">ARQUIVO DE INTERVENÇÃO &amp; DIREITO EDUCACIONAL</span>
+      <h2>Legislação Escolar e Casos Investigados</h2>
+      <p class="section-desc">
+        Base jurídica utilizada pelos inspetores do Bureau para combater o abuso de poder, proteger docentes e responsabilizar infratores no ambiente acadêmico.
+      </p>
+    </div>
+
+    <!-- Bloco sobre a Lei -->
+    <section id="leis" class="series-section">
+      <h3 class="sub-heading text-yellow">01. FUNDAMENTOS DA LEI</h3>
+      <div class="law-grid">
+        <div class="law-box border-yellow">
+          <h4>Lei de Combate ao Bullying e Cyberbullying</h4>
+          <p>Estabelece o dever das instituições de ensino de prevenir, diagnosticar e punir a intimidação sistemática física, psicológica ou digital, prevendo responsabilização civil e penal em casos graves.</p>
+        </div>
+        <div class="law-box border-yellow">
+          <h4>Estatuto de Proteção à Autoridade Docente</h4>
+          <p>Garante suporte jurídico imediato a professores vítimas de desacato, ameaça ou agressão no exercício da função, permitindo o afastamento cautelar de agressores.</p>
+        </div>
+        <div class="law-box border-yellow">
+          <h4>Responsabilidade por Omissão Institucional</h4>
+          <p>Determina sanções administrativas e criminais para gestores que encobrem delitos dentro da escola por influência financeira ou política.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="series-divider">
+      <span>REGISTRO DE OCORRÊNCIAS — DOSSIÊS DO BUREAU</span>
+    </div>
+
+    <!-- Bloco de Casos -->
+    <section id="casos" class="series-section">
+      <h3 class="sub-heading text-yellow">02. CASOS CRIMINAIS &amp; DISCIPLINARES (CLIQUE PARA ABRIR)</h3>
+      <div class="cards-grid">
+        <div class="card card-licao" onclick="mostrarInfo('Caso #104 — Extorsão e Coação Estudantil', 'Enquadramento: Crime de extorsão e associação ilícita. Um grupo utilizava influência familiar para intimidar colegas e silenciar testemunhas. A intervenção do Bureau reuniu provas digitais e garantiu a transferência compulsória e o encaminhamento ao Ministério Público.')">
+          <div class="card-badge bg-red">CASO #104</div>
+          <h3>Extorsão nos Corredores</h3>
+          <p>Abuso de poder e coação de testemunhas.</p>
+        </div>
+
+        <div class="card card-licao" onclick="mostrarInfo('Caso #219 — Difamação Digital e Vazamento', 'Enquadramento: Crimes contra a honra e invasão de dispositivo informático. Perfis anônimos divulgavam montagens falsas para destruir a reputação de uma professora. A equipe de inteligência rastreou os IPs e apresentou laudo pericial.')">
+          <div class="card-badge bg-yellow">CASO #219</div>
+          <h3>Sabotagem Cibernética</h3>
+          <p>Crimes virtuais e calúnia contra docentes.</p>
+        </div>
+
+        <div class="card card-licao" onclick="mostrarInfo('Caso #308 — Omissão da Diretoria', 'Enquadramento: Prevaricação e falsidade ideológica. Registros disciplinares foram adulterados para proteger doadores da escola. O caso resultou na destituição da diretoria e abertura de inquérito oficial.')">
+          <div class="card-badge bg-dark-red">CASO #308</div>
+          <h3>Encobrimento Institucional</h3>
+          <p>Adulteração de registros e fraude interna.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-btn" id="close-modal" aria-label="Fechar">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">RELATÓRIO OFICIAL DO BUREAU</span>
+        <h3 id="modal-title"></h3>
+      </div>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Portal Fan-Made — Arquivo <strong>Aprendendo a Lição</strong>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

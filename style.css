@@ -231,6 +231,10 @@ body {
   padding: 50px 8%;
 }
 
+.page-top-spacing {
+  padding-top: 120px;
+}
+
 .series-section {
   margin-bottom: 60px;
 }
@@ -259,6 +263,9 @@ body {
 
 .tag-yellow { color: var(--yellow-warning); }
 .tag-blue { color: var(--blue-police); }
+.text-yellow { color: var(--yellow-warning); }
+.text-blue { color: var(--blue-police); }
+.text-white { color: #ffffff; }
 
 .section-header h2 {
   font-family: 'Oswald', sans-serif;
@@ -270,6 +277,42 @@ body {
 .section-desc {
   color: var(--text-muted);
   max-width: 750px;
+}
+
+.sub-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+/* Blocos de Legislação */
+.law-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.law-box {
+  background-color: var(--bg-card);
+  padding: 22px;
+  border-radius: 4px;
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.law-box h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--text-white);
+}
+
+.law-box p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* Cards Grid */
@@ -376,6 +419,10 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
+.modal-blue {
+  border-color: var(--blue-police);
+}
+
 .close-btn {
   position: absolute;
   top: 10px;
@@ -434,5 +481,8 @@ body {
   .nav-links a {
     margin: 0 8px;
     font-size: 0.9rem;
+  }
+  .page-top-spacing {
+    padding-top: 140px;
   }
 }

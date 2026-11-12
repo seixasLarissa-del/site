@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casos Criminais &amp; Tribunal | Lei e Ordem</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo-container">
+      <span class="logo-badge bg-blue text-white">TRIBUNAL</span>
+      <h1 class="logo">LEI <span class="title-sub">&amp;</span> ORDEM</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">← Voltar ao Portal</a>
+      <a href="#codigo-penal">Processo Penal</a>
+      <a href="#casos-criminais">Casos Criminais</a>
+    </nav>
+  </header>
+
+  <main class="main-container page-top-spacing">
+    <div class="section-header border-blue">
+      <span class="section-tag tag-blue">SISTEMA DE JUSTIÇA CRIMINAL &amp; PROMOTORIA</span>
+      <h2>Processo Penal e Casos de Tribunal</h2>
+      <p class="section-desc">
+        Da investigação na cena do crime ao veredito do júri: entenda os pilares jurídicos e analise os principais processos criminais conduzidos pela promotoria.
+      </p>
+    </div>
+
+    <!-- Bloco sobre a Lei -->
+    <section id="codigo-penal" class="series-section">
+      <h3 class="sub-heading text-blue">01. PILARES DO DIREITO &amp; PROCESSO PENAL</h3>
+      <div class="law-grid">
+        <div class="law-box border-blue">
+          <h4>Cadeia de Custódia da Prova</h4>
+          <p>Conjunto de procedimentos usados para manter e documentar a história cronológica de vestígios coletados em cenas de crime, garantindo que a prova não seja invalidada no tribunal.</p>
+        </div>
+        <div class="law-box border-blue">
+          <h4>Devido Processo Legal e Presunção de Inocência</h4>
+          <p>Princípio constitucional que exige que a acusação comprove a culpa além de qualquer dúvida razoável, assegurando ao réu o direito ao contraditório e à ampla defesa.</p>
+        </div>
+        <div class="law-box border-blue">
+          <h4>Dolo vs. Culpa na Tipificação Penal</h4>
+          <p>Distinção fundamental no julgamento: verifica se o acusado teve a intenção deliberada de produzir o resultado ilícito (dolo) ou se agiu por imprudência, negligência ou imperícia (culpa).</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="series-divider">
+      <span>AUTOS PROCESSUAIS — ARQUIVO DA PROMOTORIA</span>
+    </div>
+
+    <!-- Bloco de Casos Criminais -->
+    <section id="casos-criminais" class="series-section">
+      <h3 class="sub-heading text-blue">02. CASOS CRIMINAIS ARQUIVADOS (CLIQUE PARA ABRIR)</h3>
+      <div class="cards-grid">
+        <div class="card card-lei" onclick="mostrarInfo('Processo #882 — Fraude Financeira e Lavagem', 'Investigação: Quebra de sigilo bancário autorizada judicialmente revelou desvios em contratos públicos. No tribunal, a promotoria demonstrou a autoria intelectual por meio de registros eletrônicos.')">
+          <div class="card-badge bg-blue">PROCESSO #882</div>
+          <h3>Crime do Colarinho Branco</h3>
+          <p>Desvio de recursos e rastreamento bancário.</p>
+        </div>
+
+        <div class="card card-lei" onclick="mostrarInfo('Processo #914 — Prova Pericial e Álibi', 'Investigação: Um suspeito apresentou álibi aparentemente sólido, mas a perícia forense cruzou dados de antenas de telefonia e registros de câmeras, desmontando a versão da defesa perante o júri.')">
+          <div class="card-badge bg-light-blue">PROCESSO #914</div>
+          <h3>O Álibi Contestado</h3>
+          <p>Perícia digital e contradição em depoimento.</p>
+        </div>
+
+        <div class="card card-lei" onclick="mostrarInfo('Processo #940 — Negligência Corporativa', 'Investigação: Falha grave de segurança em obra industrial causou acidente evitável. O Ministério Público acusou os responsáveis por dolo eventual após encontrar e-mails ignorando alertas técnicos.')">
+          <div class="card-badge bg-navy">PROCESSO #940</div>
+          <h3>Responsabilidade Penal</h3>
+          <p>Risco assumido e omissão de segurança.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content modal-blue">
+      <button class="close-btn" id="close-modal" aria-label="Fechar">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag text-blue">AUTOS DO TRIBUNAL</span>
+        <h3 id="modal-title"></h3>
+      </div>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Portal Fan-Made — Arquivo <strong>Lei &amp; Ordem</strong>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
